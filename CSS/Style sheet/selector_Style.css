@@ -1,0 +1,32 @@
+/* Taking a selector without class, will modify all the specific tags present. like all <p> <div> etc. It is known as the element selectors*/
+
+/* ID selectors: Selecting through ID will change only the specific element. IDs can be only one type. Class can be multiple */
+/* we can write multiple class name in a element */
+
+/* grouping selectors are those, which can be selected by putting (,) */
+
+/* ID selector is used when a particular element is to be changed */
+/* class selector is used when multiple selctors are need to changed  */
+
+
+
+/* element selector */
+p{
+    color: red;
+    border: 2px solid darkgreen;
+}
+/* id selector */
+#firstPara{
+    color: green;
+}
+.redElement{
+    color: yellow;
+}
+/* class selector */
+.bgBlue{
+    background-color: green;
+}
+/* Grouping selector */
+footer, span{
+    background-color: yellow;
+}

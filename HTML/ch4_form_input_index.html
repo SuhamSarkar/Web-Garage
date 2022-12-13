@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input</title>
+</head>
+
+
+<!--form tag is used to submit the data inputed from the user to the end point path mentioned-->
+<!--div take a whole block where span is in the inline block-->
+<!--[Lable tag is used to select the input box, by clicking on the title]-->
+<!-- avoiding <br> tag in the most of the time, in place using <div> tag -->
+<!-- assigning name helps to find the data in the backend-->
+<!-- to keep the check box, checked by default, using checked attribute-->
+<!-- name is input tag is used to store the data on the banckend with the specified name-->
+<!--ID in input tag should be same as the for in label tag
+    -->
+
+
+<body>
+    <h2>Forms and Input tag in HTML.</h2>
+
+    <form action="backend.php">
+
+        <div>
+            <label for="name"><strong>Name: </strong></label>
+            <strong></strong> <input type="text" name="myName" id="name"><br><br>
+        </div>
+        <div>
+
+            <strong>Role: </strong> <input type="text" name="myRole"><br><br>
+        </div>
+        <div>
+            <strong>Email: </strong> <input type="Email" name="myEmail"><br><br>
+        </div>
+        <div>
+            <label for="date">Date: </label>
+            <input type="date" name="myDate" id="date"><br><br>
+        </div>
+        <div>
+            number <input type="number" name="myNumber" id=""><br><br>
+        </div>
+        <div>
+            <label for="checkbox"><strong>Are you eligible?: </strong> </label>
+            <input type="checkbox" name="myEligibility" id="checkbox"><br><br>
+            <strong>Are you eligible?: </strong> <input type="checkbox" name="myEligibility" checked id=""><br><br>
+
+        </div>
+        <div>
+            Gender: <br> Male <input type="radio" name="myGender" id=""> Female <input type="radio" name="myGender"
+                id=""><br><br>
+        </div>
+
+        <div>
+            Write about youeself: <textarea name="myText" cols="20" rows="5"></textarea>
+        </div><br>
+        <div>
+
+            <label for="domains">Domains</label>
+            <select name="myDomains" id="domanis">
+                <option value="Programmer">Programmer</option>
+                <option value="Coder" selected>Coder</option>
+                <option value="Hacker">Hacker</option>
+            </select>
+        </div><br>
+        <div>
+            <input type="submit" name="mySubmit" value="Submit">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+
+
+
+
+
+
+</body>
+
+</html>

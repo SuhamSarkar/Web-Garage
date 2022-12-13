@@ -1,0 +1,21 @@
+/* nav { color : blue; } */
+
+/* selector : It is the element part which we want to change, eg: h1,p,nav */
+/* property : the color word */
+/* value : the particular like red,blue */
+/* to get the particular class in inline block, we have to first [type the block element, then the inline block element along with the class name */
+/* to call multiple classes we need to type only the same class name */
+/* MARKUP is referd to the HTML code */
+
+/* 
+INLINE CSS: style is add to each of the element in the HTML code
+INTERNAL CSS: to keep inside the head tag
+EXTERNAL CSS: It is keept separetly inside a .css style sheet
+*/
+/* inline css is given the first preference then external css */
+/* To provide the first preferance of the style tag, either in external or inline css, putting (!important) inside ;  */
+
+
+.myListsOfCommants{
+    text-align: justify;
+}

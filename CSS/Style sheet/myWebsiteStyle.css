@@ -1,0 +1,34 @@
+.myFrontPageHeading{
+    background-color: rgb(207, 237, 15);
+    color: rgb(255 0 0);
+    text-align: center;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+.myNavBar{
+    text-align: right;
+    padding-top: 20px;
+}
+
+.myNavBar a{
+    text-decoration: none;
+}
+#myFooter{
+    text-align: center;
+    padding-top: 350px;
+}
+#myFooter a{
+    text-decoration: none;
+    color: black;
+}
+
+#allIcon{
+    padding-left: 960px;
+}
+
+.htmlIcon, img{
+    width: 300px;
+}
+
