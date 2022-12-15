@@ -1,3 +1,13 @@
-a{
-    font-family: 'Courier New', Courier, monospace;
+/* web save fonts: fonts that are pre-installed on our device */
+/* web fonts: which has to be manually installed from the google */
+
+
+.myCssFontHeading {
+    text-align: center;
+}
+
+.myFontTesting {
+    text-align: center;
+    font-size: larger;
+    /* text-decoration: underline; */
 }
