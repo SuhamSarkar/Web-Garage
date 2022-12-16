@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JScript Strings</title>
 </head>
+
 <body>
+    </header>
     <div class="container">
-        <h2 style="text-align: center;">JScript String</h2><hr>
+        <h2 style="text-align: center;">JScript String</h2>
+        <hr>
+        <p style="text-align: justify; font-size: larger; text-align: center;">
+            JScript is a very forgiving lang it automaticaly understands the datatype and it also not throughs error
+            while if there is no semicolon
+        </p>
+        <div>
+            <ul style="text-align: center; font-size: larger; list-style-type: circle;">
+                <li>
+                    <p>
+                        // We can use all the qutoes in back ticks<br>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        // JScript String / String Methods<br>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        //Most of the cases we need to use the bacl ticks to concatinate the strings instead of (+)
+                        operator. <br>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        //Escape sequance characters like java and python [\n \t \\]
+                    </p>
+                </li>
+            </ul>
+        </div>
     </div>
+    <header>
+
+
+        <script>
+            //Most of the cases we need to use the bacl ticks to concatinate the strings instead of (+) operator.
+            // We can use all the qutoes in back ticks
+            // JScript String / String Methods
+            //Escape sequance characters like java and python [\n \t \\] 
+
+            var string = "Hello World";
+            var string02 = 'How is it "going"';
+            var string2 = 'How is it "going"';
+            var string3 = "Get ready for the 'future'";
+            console.log(string);
+            console.log(string2);
+            console.log(string3);
+            //Using backticks to concatinate the strings
+            console.log(`${string} How is it going ${string3}`)
+            //concatination of strings (+) with plus operators.
+            console.log(string + string02 + string3)
+
+            // finding the Length of the string
+            var name = `Hello i am suham`
+            var len = name.length;
+            console.log("The Length of the string name is: " + len)
+            // Sring can also be made with constructor
+            var y = new String("hello")
+            console.log (y);
+
+
+        </script>
+
 </body>
+
 </html>
