@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope and Conditional statements</title>
+  </head>
+
+  <!-- to get the multiple elements together
+      like: div>ul>li{texts-$}*4  
+
+    var and let is a way to declare the variables.
+
+    var: it is a global level scope
+    let: it has a block level scope like if else type blocks. It is used when we want to change the variable.
+    const (constant) :It is declaration whoes value cannot tbe changed. And it is used when we find if the value will not changed in the entier program
+
+
+    // in a block the scope is limited inside a block, it does not execute the outside variables
+
+    {
+        // block
+        
+    }
+        
+ -->
+
+  <body>
+    <div class="container">
+      <h2>JScript Scoope and Conditional Statements</h2>
+    </div>
+    <div>
+      <ul>
+        <li>Items-1</li>
+        <li>Items-2</li>
+        <li>Items-3</li>
+        <li>Items-4</li>
+        <li>Items-5</li>
+        <li>Items-6</li>
+        <li>Items-7</li>
+      </ul>
+    </div>
+
+    <script>
+      "use strict";
+
+      let string1, string2;
+      string1 = "This is a string";
+      string2 = "This is a string";
+      console.log(string1);
+      console.log(string2);
+
+      // block with var declaration
+      var a = "Outside the block";
+      {
+        var a = "Inside a block";
+        console.log(a);
+      }
+      console.log(a);
+      // block with let variable declaration
+      let b = "Outside the block";
+      {
+        let b = "Inside a block";
+        console.log(a);
+      }
+      console.log(a);
+
+      //constant varibale declaration
+      const string22 = "This cannot be changed";
+      //   string22 = "This will not changed instead throughs an error";
+      console.log(string22);
+
+      //Conditional statements {If Else ladder}
+      let age = 22;
+      if (age > 18) {
+        console.log("You can drink water");
+      } else if (age == 2) {
+        console.log("You can have chocolate");
+      } else {
+        console.log("You can drink cold dring");
+      }
+
+      //switch case satements with const declaration
+      // for string
+      //break is used as a else
+      //If break is missing, then the code will run all the console methods together.
+
+      const week = "saturday";
+      switch (week) {
+        case "monday":
+          console.log("Today is monday");
+          break;
+        case "tuesday":
+          console.log("Today is tuesday");
+          break;
+        case "wednesday":
+          console.log("Today is wednesday");
+          break;
+
+        default:
+          console.log("None of the above");
+          break;
+      }
+
+      //for integer
+
+      let age11 = 23;
+      switch (age11) {
+        case 23:
+          console.log("Age is 23");
+          break;
+
+        default:
+          console.log("Age is 25");
+          break;
+      }
+
+      //without break
+      const age2 = 25;
+      switch (age2) {
+        case 23:
+          console.log("Age is 23");
+        // break;
+
+        default:
+          console.log("Age is 25");
+        // break;
+      }
+    </script>
+  </body>
+</html>
