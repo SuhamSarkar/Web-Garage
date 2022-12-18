@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays and Objects</title>
+  </head>
+
+  <!-- Two types values: premitives and reference
+premitive: int, string
+
+-->
+  <body>
+    <header>
+      <div class="heading">
+        <h2>
+          <strong>Arrays and objects in JScript</strong>
+        </h2>
+      </div>
+    </header>
+
+    <!-- Arrays and objects -->
+    <script>
+      let string = "This is a string";
+      let num = 45;
+      let bool = true;
+      let bool2 = false;
+      let myVar = null;
+      let myVar2 = undefined;
+
+      // Objects: store the key value pairs
+      //objects is such information created in a block of {}
+      //manual objects is created in {}
+      //to access the specific element in an object (variable name.elementName) or (variableName ['elementName'] in the console of the web)
+      //key: (variableName)  value:dataType
+      //If the varible name is in quotes and there is a space, then to access the object in the console, we need to type {variableName ['valueName with space']}
+
+      //   objects with arrays
+      //   index value can be print with [] value of the index
+      //   sort the array {variabelName = variableName.sort()}
+
+      let employee = {
+        name: "Suham",
+        salary: 10,
+        gitProject: "webGarage",
+        "name 2": "Suham sarkar",
+      };
+      console.log(employee);
+
+      let name = [1, 22, 3, "suham", true, undefined];
+    //   let len = name.length();
+    //   console.log("The length of the array: " + len);
+      name = name.sort();
+      console.log(name);
+
+        //with new array we can create a new objects
+        let obj = new Array(1, 2, 3, "suham", true, undefined);
+        console.log(obj);
+        console.log("The length of the new array object: " + obj.length);
+
+        // to add and remove elements in array, 
+        // push: to add new element at the end of the object
+        let addElement = new Array(1, 2, 5, "suham");
+        addElement.push("Add new element");
+        console.log(addElement);
+    </script>
+  </body>
+</html>
