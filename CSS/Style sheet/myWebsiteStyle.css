@@ -1,3 +1,24 @@
+*{
+    color: white;
+}
+body{
+    background: url(/images/bg.jpg) center center fixed;
+}
+#allIcon{
+    /* display: block; */
+    position: absolute;
+    /* left: 10px; */
+    /* border: 2px solid red; */
+    width: 50%;
+    margin: 20px auto;
+
+}
+#allIcon .allImg{
+    /* position: absolute; */
+}
+.htmlIcon img{
+    filter: invert(100%);
+}
 .myFrontPageHeading{
     background-color: rgb(207, 237, 15);
     color: rgb(255 0 0);
@@ -12,6 +33,7 @@
     text-align: right;
     padding-top: 20px;
 }
+
 
 .myNavBar a{
     text-decoration: none;
