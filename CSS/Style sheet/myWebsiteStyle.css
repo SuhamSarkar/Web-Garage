@@ -13,9 +13,9 @@ body{
     margin: 20px auto;
 
 }
-#allIcon .allImg{
+/* #allIcon .allImg{
     /* position: absolute; */
-}
+*/
 .htmlIcon img{
     filter: invert(100%);
 }
